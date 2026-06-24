@@ -136,7 +136,7 @@ header p {
     overflow: hidden;
     box-shadow: 0 10px 25px rgba(0,0,0,0.08);
     transition: 0.3s ease;
-    align-items: center; /* KEY FIX */
+    align-items: stretch; /* IMPORTANT FIX */
 }
 
 .project-card:hover {
@@ -149,10 +149,10 @@ header p {
 
 .project-card img {
     width: 320px;
-    height: 220px;
+    height: auto;
+    align-self: stretch;
     object-fit: cover;
     display: block;
-    flex-shrink: 0;
 }
 
 /* =========================
@@ -304,4 +304,9 @@ footer {
     max-width: 90%;
     max-height: 90%;
     border-radius: 10px;
+}
+
+.project-card img {
+    display: block;
+    line-height: 0;
 }
