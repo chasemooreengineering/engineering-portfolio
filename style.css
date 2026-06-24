@@ -175,3 +175,83 @@ footer {
         width: 100%;
     }
 }
+/* Dark mode variables */
+:root {
+    --bg: #f5f7fb;
+    --card: #ffffff;
+    --text: #111827;
+    --muted: #4b5563;
+    --accent: #0f172a;
+}
+
+/* Dark mode state */
+body.dark {
+    --bg: #0b1220;
+    --card: #111827;
+    --text: #e5e7eb;
+    --muted: #9ca3af;
+    --accent: #3b82f6;
+}
+
+body {
+    background: var(--bg);
+    color: var(--text);
+}
+
+.project-card {
+    background: var(--card);
+}
+
+.project-content p,
+.project-content ul {
+    color: var(--muted);
+}
+
+.project-content a,
+.resume-btn {
+    background: var(--accent);
+}
+
+/* Toggle button */
+.dark-toggle {
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    padding: 10px 15px;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+    background: #374151;
+    color: white;
+}
+
+/* Lightbox background */
+.lightbox {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0,0,0,0.9);
+    justify-content: center;
+    align-items: center;
+    z-index: 999;
+}
+
+.lightbox img {
+    max-width: 90%;
+    max-height: 90%;
+    border-radius: 10px;
+    box-shadow: 0 0 30px rgba(0,0,0,0.5);
+}
+
+/* Make images clickable */
+.project-card img {
+    cursor: zoom-in;
+    transition: 0.2s;
+}
+
+.project-card img:hover {
+    transform: scale(1.02);
+}
