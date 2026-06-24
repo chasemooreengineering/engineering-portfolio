@@ -4,8 +4,13 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Chase Moore | Mechanical Engineer</title>
+
     <link rel="stylesheet" href="style.css">
-</head><link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+
+    <!-- Font -->
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+</head>
+
 <body>
 
 <header>
@@ -20,45 +25,28 @@
         </div>
     </div>
 
-    <button id="darkToggle" class="dark-toggle">
-    Dark Mode
-</button>
-
-<script>
-const lightbox = document.getElementById("lightbox");
-const lightboxImg = document.getElementById("lightbox-img");
-
-document.querySelectorAll(".project-card img").forEach(img => {
-    img.addEventListener("click", () => {
-        lightbox.style.display = "flex";
-        lightboxImg.src = img.src;
-    });
-});
-
-lightbox.addEventListener("click", () => {
-    lightbox.style.display = "none";
-});
-</script>
-
+    <!-- Dark mode button -->
+    <button id="darkToggle" class="dark-toggle">Dark Mode</button>
 </header>
 
 <section class="hero">
     <div class="container">
-       <h2>Mechanical Engineer | CAD Design | Automotive Product Development</h2>
+        <h2>Mechanical Engineer | CAD Design | Automotive Product Development</h2>
 
-    <p>
-    Designing and developing production-ready automotive components through CAD modeling,
-    rapid prototyping, testing, and manufacturing documentation.
-    </p>
+        <p>
+            Designing and developing production-ready automotive components through CAD modeling,
+            rapid prototyping, testing, and manufacturing documentation.
+        </p>
     </div>
 </section>
 
+<!-- PROJECTS -->
 <section id="projects" class="projects">
-
     <div class="container">
 
         <h2>Featured Projects</h2>
 
+        <!-- Project 1 -->
         <div class="project-card">
             <img src="images/pedal-box-full.jpg" alt="FSAE Pedal Box">
 
@@ -66,51 +54,43 @@ lightbox.addEventListener("click", () => {
                 <h3>FSAE Pedal Box Redesign</h3>
 
                 <p>
-                    Led a 3-person team responsible for redesigning the
-                    Formula SAE pedal box assembly according to competition
-                    requirements and manufacturing constraints.
+                    Led a 3-person team redesigning the Formula SAE pedal box assembly.
                 </p>
 
                 <ul>
                     <li>285-part SolidWorks assembly</li>
                     <li>Reduced manufacturing cost</li>
-                    <li>Improved driver adjustability</li>
-                    <li>Presented design to faculty and team leadership</li>
-                    <li>Validated for loads exceeding 2000 kN</li>
+                    <li>Improved adjustability</li>
+                    <li>Validated over 2000 kN loads</li>
                 </ul>
 
-                <a href="images/pedal-box-full.jpg" target="_blank">
-    View Project
-</a>
+                <a href="images/pedal-box-full.jpg" target="_blank">View Project</a>
             </div>
         </div>
 
+        <!-- Project 2 -->
         <div class="project-card">
-            <img src="images/kelltrac.jpg" alt="Automotive Design">
+            <img src="images/kelltrac.jpg" alt="Kelltrac Design">
 
             <div class="project-content">
-                <h3>Kelltrac Innovations Design Projects</h3>
+                <h3>Kelltrac Innovations Design</h3>
 
                 <p>
-                    Designed aftermarket automotive components from
-                    concept through production using reverse engineering,
-                    CAD modeling, prototyping, and validation testing.
+                    Automotive product development from concept to production.
                 </p>
 
                 <ul>
-                    <li>Vehicle measurement and fitment analysis</li>
-                    <li>SolidWorks CAD development</li>
+                    <li>Reverse engineering</li>
+                    <li>CAD modeling</li>
                     <li>3D printed prototypes</li>
-                    <li>Vehicle installation and validation</li>
-                    <li>Production-ready technical drawings</li>
+                    <li>Fitment validation</li>
                 </ul>
 
-                <a href="images/cantilever-suspension.pdf" target="_blank">
-    View Project
-</a>
+                <a href="images/kelltrac.jpg" target="_blank">View Project</a>
             </div>
         </div>
 
+        <!-- Project 3 -->
         <div class="project-card">
             <img src="images/cantilever-suspension.jpg" alt="Cantilever Suspension">
 
@@ -118,150 +98,145 @@ lightbox.addEventListener("click", () => {
                 <h3>Automotive Prototype Development</h3>
 
                 <p>
-                    Complete product development workflow from
-                    customer concept to production-ready design.
+                    Full workflow from concept to production-ready design.
                 </p>
 
                 <ul>
-                    <li>Requirement gathering</li>
                     <li>CAD design</li>
                     <li>Rapid prototyping</li>
                     <li>Fitment testing</li>
-                    <li>Manufacturing documentation</li>
+                    <li>Documentation</li>
                 </ul>
 
-                <a href="images/cantilever-suspension.jpg" target="_blank">
-    View Project
-</a> 
+                <a href="images/cantilever-suspension.jpg" target="_blank">View Project</a>
+            </div>
+        </div>
+
+        <!-- Project 4 -->
+        <div class="project-card">
+            <img src="images/3d-printing-projects.jpg" alt="3D Printing">
+
+            <div class="project-content">
+                <h3>3D Printing & Prototyping</h3>
+
+                <p>
+                    Rapid prototyping and automotive validation.
+                </p>
+
+                <ul>
+                    <li>FDM printing</li>
+                    <li>Iterative design</li>
+                    <li>Fitment testing</li>
+                </ul>
+
+                <a href="projects/3d-printing.html">View Project</a>
+            </div>
         </div>
 
     </div>
-
-<div class="project-card">
-    <img src="images/3d-printing-projects.jpg" alt="3D Printing Projects">
-
-    <div class="project-content">
-        <h3>3D Printing & Rapid Prototyping</h3>
-
-        <p>
-            Designed, printed, and validated functional prototypes for
-            automotive applications, accelerating product development
-            from concept to production.
-        </p>
-
-        <ul>
-            <li>FDM 3D Printing</li>
-            <li>Prototype Validation</li>
-            <li>Fitment Testing</li>
-            <li>Design Iteration</li>
-            <li>Production Support</li>
-        </ul>
-
-        <a href="projects/3d-printing.html">
-            View Project
-        </a>
-    </div>
-</div>
-
-
 </section>
 
+<!-- SKILLS -->
 <section class="skills">
-
     <div class="container">
-
         <h2>Technical Skills</h2>
 
         <div class="skill-grid">
-
             <div class="skill-box">
                 <h3>CAD</h3>
-                <p>SolidWorks, Fusion 360, Technical Drawings</p>
+                <p>SolidWorks, Fusion 360</p>
             </div>
 
             <div class="skill-box">
                 <h3>Manufacturing</h3>
-                <p>3D Printing, Fabrication, Assembly Design</p>
+                <p>3D Printing, Fabrication</p>
             </div>
 
             <div class="skill-box">
                 <h3>Engineering</h3>
-                <p>Product Development, Reverse Engineering, Validation</p>
+                <p>Product Development, Testing</p>
             </div>
 
             <div class="skill-box">
                 <h3>Automotive</h3>
-                <p>Performance Vehicles, Suspension Systems, Vehicle Testing</p>
+                <p>Suspension, Performance Systems</p>
             </div>
-
         </div>
-
     </div>
-
 </section>
 
+<!-- RESUME -->
 <section id="resume" class="resume">
-
     <div class="container">
-
         <h2>Resume</h2>
-
-        <p>
-            Bachelor of Science in Mechanical Engineering
-            <br>
-            Embry-Riddle Aeronautical University
-        </p>
 
         <a class="resume-btn" href="resume/Chase_Moore_Resume.pdf">
             Download Resume
         </a>
-
     </div>
-
 </section>
 
+<!-- CONTACT -->
 <section id="contact" class="contact">
-
     <div class="container">
-
         <h2>Contact</h2>
 
         <p>Email: your.email@email.com</p>
-
         <p>LinkedIn: linkedin.com/in/chasemoore</p>
-
         <p>Location: Florida, USA</p>
-
     </div>
-
 </section>
 
 <footer>
     <p>© 2026 Chase Moore</p>
 </footer>
-<script>
-const toggle = document.getElementById("darkToggle");
 
-toggle.addEventListener("click", () => {
-    document.body.classList.toggle("dark");
-
-    if (document.body.classList.contains("dark")) {
-        toggle.textContent = "Light Mode";
-        localStorage.setItem("theme", "dark");
-    } else {
-        toggle.textContent = "Dark Mode";
-        localStorage.setItem("theme", "light");
-    }
-});
-
-// Load saved theme
-if (localStorage.getItem("theme") === "dark") {
-    document.body.classList.add("dark");
-    toggle.textContent = "Light Mode";
-}
-</script>
+<!-- LIGHTBOX -->
 <div id="lightbox" class="lightbox">
     <img id="lightbox-img">
 </div>
+
+<!-- SCRIPTS (IMPORTANT: MUST BE AT BOTTOM) -->
+<script>
+document.addEventListener("DOMContentLoaded", function () {
+
+    /* DARK MODE */
+    const toggle = document.getElementById("darkToggle");
+
+    toggle.addEventListener("click", () => {
+        document.body.classList.toggle("dark");
+
+        if (document.body.classList.contains("dark")) {
+            toggle.textContent = "Light Mode";
+            localStorage.setItem("theme", "dark");
+        } else {
+            toggle.textContent = "Dark Mode";
+            localStorage.setItem("theme", "light");
+        }
+    });
+
+    if (localStorage.getItem("theme") === "dark") {
+        document.body.classList.add("dark");
+        toggle.textContent = "Light Mode";
+    }
+
+    /* LIGHTBOX */
+    const lightbox = document.getElementById("lightbox");
+    const lightboxImg = document.getElementById("lightbox-img");
+
+    document.querySelectorAll(".project-card img").forEach(img => {
+        img.addEventListener("click", () => {
+            lightbox.style.display = "flex";
+            lightboxImg.src = img.src;
+        });
+    });
+
+    lightbox.addEventListener("click", () => {
+        lightbox.style.display = "none";
+    });
+
+});
+</script>
+
 </body>
 </html>
